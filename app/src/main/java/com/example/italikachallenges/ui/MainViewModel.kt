@@ -121,6 +121,6 @@ class MainViewModel : ViewModel() {
         private const val TAG = "MainViewModel"
         private const val SEG = 1000L
         private const val MIN = 60 * SEG
-        private const val DELAY_TIME = 5 * SEG
+        private const val DELAY_TIME = 5 * MIN
     }
 }
