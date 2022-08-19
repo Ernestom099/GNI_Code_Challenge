@@ -4,6 +4,7 @@ import android.net.Uri
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.italikachallenges.models.Image
+import com.example.italikachallenges.ui.dialogs.GenericErrorDialog
 import com.example.italikachallenges.utis.FirebaseConstants
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -25,14 +26,10 @@ class GalleryViewModel : ViewModel() {
             _images.postValue(imagesResponse)
         }
     }
-    fun uploadImages(filePath: Uri?){
-        galeryInteractor.uploadImage(filePath) { successUpload ->
-            if (successUpload) {
-                getImages()
-            } else {
-                //Message error
-            }
 
+    fun uploadImages(filePath: Uri?){
+        galeryInteractor.uploadImage(filePath) {
+               getImages()
         }
     }
 

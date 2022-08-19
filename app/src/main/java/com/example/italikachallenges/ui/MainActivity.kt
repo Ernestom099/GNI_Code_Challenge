@@ -1,14 +1,19 @@
 package com.example.italikachallenges.ui
 
 import android.Manifest
+import android.app.NotificationChannel
+import android.app.NotificationManager
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -134,7 +139,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun startUpdatingLocation() {
-        mainViewModel.addValueToFirestore(this)
+        mainViewModel.startUpdatingLocation(this)
     }
 
     private fun askTurnOnGps(exception: Exception) {
@@ -160,6 +165,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+
 
     companion object {
         const val MY_PERMISSIONS_REQUEST = 1

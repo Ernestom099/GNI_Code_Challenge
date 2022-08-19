@@ -30,11 +30,7 @@ class MoviesFragment : Fragment() {
 
             viewPager.adapter = ViewPagerAdapter(childFragmentManager)
 
-            viewPager.addOnPageChangeListener(
-                TabLayout.TabLayoutOnPageChangeListener(
-                    tablayout
-                )
-            )
+            viewPager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tablayout))
 
 
             tablayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {

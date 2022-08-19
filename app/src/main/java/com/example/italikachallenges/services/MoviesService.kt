@@ -22,15 +22,6 @@ interface MoviesService {
     ): MoviesResponse
 
     companion object {
-        private const val BASE_URL = "https://api.themoviedb.org/3/"
-
-        fun create(): MoviesService {
-            val retrofit = Retrofit.Builder()
-                .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl(BASE_URL)
-                .build()
-
-            return retrofit.create(MoviesService::class.java)
-        }
+         const val BASE_URL = "https://api.themoviedb.org/3/"
     }
 }

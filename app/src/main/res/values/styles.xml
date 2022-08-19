@@ -15,6 +15,13 @@
         <item name="android:layout_margin">@dimen/text_common_margin</item>
         <item name="android:textStyle">bold</item>
     </style>
+    <style name="TextTitleH2Center">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">@dimen/text_title_h2_text_size</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_margin">@dimen/text_common_margin</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 
 
     <style name="TextMovieTitle" >

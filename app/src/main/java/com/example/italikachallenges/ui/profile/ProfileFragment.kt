@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.italikachallenges.R
 import com.example.italikachallenges.databinding.FragmentProfileBinding
+import com.example.italikachallenges.ui.dialogs.GenericErrorDialog
 import com.example.italikachallenges.ui.profile.adapters.MoviesAdapter
 import com.example.italikachallenges.utis.Const
 
@@ -41,20 +42,26 @@ class ProfileFragment : Fragment() {
         profileViewModel.people.observe(viewLifecycleOwner, Observer { people ->
 
             with(binding) {
-                Glide.with(requireContext())
-                    .load(Const.IMAGE_URL + people.profilePath)
-                    .circleCrop().circleCrop()
-                    .into(imageProfilePhoto)
+              if(people != null) {
+                  Glide.with(requireContext())
+                      .load(Const.IMAGE_URL + people.profilePath)
+                      .circleCrop().circleCrop()
+                      .into(imageProfilePhoto)
 
-                textName.text = people.name
-                recyclerMovies.layoutManager =
-                    LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-                recyclerMovies.adapter = profileViewModel.getAdapter()
-
+                  textName.text = people.name
+                  recyclerMovies.layoutManager =
+                      LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+                  recyclerMovies.adapter = profileViewModel.getAdapter()
+              }else{
+                  val dialog = GenericErrorDialog()
+                  dialog.arguments  = GenericErrorDialog.createBundle(getString(R.string.error_retrieving_message))
+                  dialog.show(
+                      childFragmentManager, GenericErrorDialog.TAG)
+              }
             }
         })
 
-        profileViewModel.getPoularPeople()
+        profileViewModel.getPopularPeople()
     }
 
     override fun onDestroyView() {

@@ -13,8 +13,10 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import com.example.italikachallenges.R
 import com.example.italikachallenges.databinding.FragmentGalleryBinding
 import com.example.italikachallenges.models.Image
+import com.example.italikachallenges.ui.dialogs.GenericErrorDialog
 import com.example.italikachallenges.ui.popularmovies.adapters.GridGalleryAdapter
 import com.example.italikachallenges.utis.FirebaseConstants
 import com.google.firebase.firestore.ktx.firestore
@@ -44,6 +46,7 @@ class GalleryFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         galleryViewModel.images.observe(viewLifecycleOwner, Observer { images ->
             binding.recyclerGallery.adapter = GridGalleryAdapter(images)
+
         })
         galleryViewModel.getImages()
 

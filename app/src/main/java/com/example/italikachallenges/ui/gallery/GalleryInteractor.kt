@@ -13,7 +13,7 @@ import java.util.*
 
 class GalleryInteractor {
 
-    fun getImages(imagesCallback: (List<Image>) -> Unit) {
+    fun getImages(imagesCallback: (List<Image>?) -> Unit) {
         val images: MutableList<Image> = mutableListOf()
 
         Firebase.firestore

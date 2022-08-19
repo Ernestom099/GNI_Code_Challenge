@@ -22,5 +22,6 @@
     <dimen name="profile_card_margin_top">100dp</dimen>
     <dimen name="container_common_middle_small_margin">8dp</dimen>
     <dimen name="profile_list_movies_height">300dp</dimen>
+    <dimen name="common_view_margin">16dp</dimen>
 
 </resources>
