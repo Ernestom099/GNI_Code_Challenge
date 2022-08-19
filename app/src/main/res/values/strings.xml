@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ItalikaChallenges</string>
+    <string name="title_profile">Perfil</string>
+    <string name="title_movies">Peliculas</string>
+    <string name="title_map">Mapa</string>
+    <string name="title_gallery">Galeria</string>
+    <string name="example_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s</string>
+    <string name="biography">Biografia</string>
+    <string name="known_for">Conocido(a) por</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_recommendations">Recomendaciones</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="button_add">Añadir</string>
+    <string name="some_features_not_avaible">Algunas funcionalidades no estaran disponibles</string>
+    <dimen name="profile_card_info_size">32dp</dimen>
+</resources>

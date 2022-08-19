@@ -1,0 +1,26 @@
+<resources>
+    <!-- Profile Fragment -->
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="profile_name_container_margin_top">60dp</dimen>
+    <dimen name="card_profile_info_corner_radius">15dp</dimen>
+    <dimen name="card_view_profile_movie_list">20dp</dimen>
+    <dimen name="card_grid_item_movie_corner_radius">20dp</dimen>
+    <dimen name="card_grid_item_movie_margin_bottom">8dp</dimen>
+    <dimen name="container_common_margin">16dp</dimen>
+    <dimen name="text_common_margin">16dp</dimen>
+    <dimen name="card_gallery_item_corner_radius">10dp</dimen>
+    <dimen name="container_common_small_margin">4dp</dimen>
+
+    <dimen name="text_title_h1_text_size">20sp</dimen>
+    <dimen name="text_title_h2_text_size">16sp</dimen>
+    <dimen name="profile_image_size">120dp</dimen>
+    <dimen name="max_weight">1</dimen>
+    <dimen name="card_common_elevation">10dp</dimen>
+    <dimen name="card_profile_background_height">200dp</dimen>
+    <dimen name="profile_card_margin_top">100dp</dimen>
+    <dimen name="container_common_middle_small_margin">8dp</dimen>
+    <dimen name="profile_list_movies_height">300dp</dimen>
+
+</resources>

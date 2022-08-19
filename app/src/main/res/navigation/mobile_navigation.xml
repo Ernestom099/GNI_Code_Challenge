@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_profile">
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.italikachallenges.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+        android:id="@+id/navigation_movies"
+        android:name="com.example.italikachallenges.ui.movies.MoviesFragment"
+        android:label="@string/title_movies"
+        tools:layout="@layout/fragment_movies" >
+        <action
+            android:id="@+id/movies_to_recommendations"
+            app:destination="@+id/navigation_recommendations">
+            <argument
+                android:name="movieId"
+                app:argType="integer"
+                app:nullable="false" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_maps"
+        android:name="com.example.italikachallenges.ui.map.MapFragment"
+        android:label="@string/title_map"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/navigation_gallery"
+        android:name="com.example.italikachallenges.ui.gallery.GalleryFragment"
+        android:label="@string/title_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/navigation_recommendations"
+        android:name="com.example.italikachallenges.ui.recommendations.BestRecommendationsFragment"
+        android:label="@string/title_recommendations"
+        tools:layout="@layout/fragment_best_recommendations" >
+        <argument
+            android:name="movieId"
+            app:argType="integer"
+            app:nullable="false" />
+    </fragment>
+
+
+</navigation>

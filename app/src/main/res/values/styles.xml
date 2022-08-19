@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextTitleH1">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">@dimen/text_title_h1_text_size</item>
+        <item name="android:layout_margin">@dimen/text_common_margin</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextTitleH2">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">@dimen/text_title_h2_text_size</item>
+        <item name="android:layout_margin">@dimen/text_common_margin</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="TextMovieTitle" >
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">@dimen/text_title_h2_text_size</item>
+        <item name="android:layout_margin">@dimen/text_common_margin</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="CardProfileBackground" >
+        <item name="android:layout_height">@dimen/card_profile_background_height</item>
+        <item name="android:background">@color/design_default_color_primary_variant</item>
+    </style>
+
+    <style name="ProfileImage">
+        <item name="android:elevation">@dimen/card_common_elevation</item>
+        <item name="android:layout_width">@dimen/profile_image_size</item>
+        <item name="android:layout_height">@dimen/profile_image_size</item>
+    </style>
+    
+    <style name="ProfileCardInfo">
+        <item name="android:layout_marginLeft">@dimen/profile_card_info_size</item>
+        <item name="android:layout_marginRight">@dimen/profile_card_info_size</item>
+        <item name="android:layout_marginTop">@dimen/profile_card_margin_top</item>
+    </style>
+
+    <style name="ProfileListOfMovies">
+        <item name="android:layout_height">@dimen/profile_list_movies_height</item>
+        <item name="android:layout_margin">@dimen/container_common_margin</item>
+    </style>
+
+    <style name="ProfileMoviesListItem">
+        <item name="android:layout_marginBottom">@dimen/container_common_middle_small_margin</item>
+        <item name="android:layout_weight">@dimen/max_weight</item>
+    </style>
+
+    <style name="GalleryList">
+        <item name="android:layout_margin">@dimen/container_common_middle_small_margin</item>
+        <item name="android:layout_weight">@dimen/max_weight</item>
+    </style>
+
+    <style name="GalleryListItem">
+        <item name="android:elevation">@dimen/card_common_elevation</item>
+        <item name="android:layout_marginBottom">@dimen/container_common_middle_small_margin</item>
+    </style>
+
+</resources>

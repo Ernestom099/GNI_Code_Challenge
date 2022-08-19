@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Documentos/ItalikaChallenges/app/src/main/res/layout/activity_main.xml" value="0.3052536231884058" />
+        <entry key="..\:/Documentos/ItalikaChallenges/app/src/main/res/layout/activity_maps.xml" value="0.3052536231884058" />
+        <entry key="..\:/Documentos/ItalikaChallenges/app/src/main/res/layout/fragment_best_recommendations.xml" value="0.3052536231884058" />
+        <entry key="..\:/Documentos/ItalikaChallenges/app/src/main/res/layout/fragment_gallery.xml" value="0.3052536231884058" />
+        <entry key="..\:/Documentos/ItalikaChallenges/app/src/main/res/layout/fragment_map.xml" value="0.3052536231884058" />
+        <entry key="..\:/Documentos/ItalikaChallenges/app/src/main/res/layout/fragment_most_calificated_movies.xml" value="0.3052536231884058" />
+        <entry key="..\:/Documentos/ItalikaChallenges/app/src/main/res/layout/fragment_most_popular.xml" value="0.16" />
+        <entry key="..\:/Documentos/ItalikaChallenges/app/src/main/res/layout/fragment_movies.xml" value="0.3052536231884058" />
+        <entry key="..\:/Documentos/ItalikaChallenges/app/src/main/res/layout/fragment_profile.xml" value="0.3052536231884058" />
+        <entry key="..\:/Documentos/ItalikaChallenges/app/src/main/res/layout/grid_list_item_gallery.xml" value="0.3052536231884058" />
+        <entry key="..\:/Documentos/ItalikaChallenges/app/src/main/res/layout/grid_list_item_movie.xml" value="0.3052536231884058" />
+        <entry key="..\:/Documentos/ItalikaChallenges/app/src/main/res/layout/list_item_movie.xml" value="0.3052536231884058" />
+        <entry key="..\:/Documentos/ItalikaChallenges/app/src/main/res/menu/bottom_nav_menu.xml" value="0.15833333333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

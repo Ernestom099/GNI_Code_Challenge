@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "167107267494",
+    "project_id": "italika-1b672",
+    "storage_bucket": "italika-1b672.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167107267494:android:3e4ba4f5293f8e855d5d67",
+        "android_client_info": {
+          "package_name": "com.example.italikachallenges"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167107267494-o5f05b1i3jo326u86in2og1isdj93tlc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHyynejmiQvwY7_7XthfuoRdNOGdjdblc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167107267494-o5f05b1i3jo326u86in2og1isdj93tlc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
